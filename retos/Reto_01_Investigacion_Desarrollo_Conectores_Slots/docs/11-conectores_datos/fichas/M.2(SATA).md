@@ -13,7 +13,7 @@
 - Formato principal actual; depende del soporte de la placa base.
 
 ## Fotos
-![<alt>](../../../assets/img/11-conectores_datos/M.2.jpg)
+![M.2 (NVMe/SATA)](../../../assets/img/11-conectores_datos/M.2.jpg "M.2 (NVMe/SATA)")
 
 ## Fuentes
 

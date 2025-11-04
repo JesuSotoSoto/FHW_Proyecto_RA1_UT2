@@ -13,7 +13,7 @@
 - DP 2.x soporta 8K/10K y modo alterno USB-C.
 
 ## Fotos
-![<alt>](../../../assets/img/20-conectores_externos/display.jpg)
+![DisplayPort 1.4 / 2.x](../../../assets/img/20-conectores_externos/display.jpg "DisplayPort 1.4 / 2.x" )
 
 ## Fuentes
 - https://vesa.org/standards/displayport/

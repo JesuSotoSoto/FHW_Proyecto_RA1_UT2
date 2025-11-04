@@ -13,7 +13,7 @@
 - USB-A sigue muy extendido; limitado frente a USB-C.
 
 ## Fotos
-![<alt>](../../../assets/img/20-conectores_externos/usb.jpg)
+![USB-A 2.0 / 3.x](../../../assets/img/20-conectores_externos/usb.jpg "USB-A 2.0 / 3.x")
 
 ## Fuentes
 - https://usb.org/document-library/usb-32-specification-released

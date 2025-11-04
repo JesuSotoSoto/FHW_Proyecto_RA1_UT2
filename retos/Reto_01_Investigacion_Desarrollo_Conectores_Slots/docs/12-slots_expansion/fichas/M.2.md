@@ -13,7 +13,7 @@
 - Común en portátiles y placas base modernas; sustituye a mPCIe.
 
 ## Fotos
-![<M.2>](../../../assets/img/12-slots_expansion/M.2.jpg "<M.2>")
+![M.2](../../../assets/img/12-slots_expansion/M.2.jpg "M.2")
 
 ## Fuentes
 - https://www.intel.com/content/www/us/en/support/articles/000026519/wireless.html

@@ -15,7 +15,7 @@
 
 ## Fotos
 
-![Sata](../../../assets/img/10-conectores_internos/Sata.jpg)
+![Sata](../../../assets/img/10-conectores_internos/Sata.jpg "SATA Power" )
 
 ## Enlaces
 

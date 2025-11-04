@@ -13,7 +13,7 @@
 - En desuso en equipos modernos; aún presente en hardware profesional.
 
 ## Fotos
-![<alt>](../../../assets/img/20-conectores_externos/usb-b.jpg)
+![USB-B](../../../assets/img/20-conectores_externos/usb-b.jpg "USB-B")
 
 ## Fuentes
 - https://usb.org/defined-usb-connectors-cables

@@ -15,7 +15,7 @@
 
 ## Fotos
 
-![EPS](../../../assets/img/10-conectores_internos/EPS.jpg)
+![EPS](../../../assets/img/10-conectores_internos/EPS.jpg "EPS de 8 pines")
 
 ## Enlaces 
 

@@ -13,7 +13,7 @@
 - Menos común en equipos domésticos; usado en estaciones o servidores.
 
 ## Fotos
-![<alt>](../../../assets/img/11-conectores_datos/U.2.jpg)
+![U.2](../../../assets/img/11-conectores_datos/U.2.jpg "U.2")
 
 ## Fuentes
 

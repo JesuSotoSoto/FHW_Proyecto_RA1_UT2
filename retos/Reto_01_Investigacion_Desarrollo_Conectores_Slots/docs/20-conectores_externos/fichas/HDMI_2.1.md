@@ -13,7 +13,7 @@
 - Retrocompatible con HDMI 1.x; requiere cable “Ultra High Speed”.
 
 ## Fotos
-![<alt>](../../../assets/img/20-conectores_externos/hdmi.jpg)
+![HDMI 2.1](../../../assets/img/20-conectores_externos/hdmi.jpg "HDMI 2.1")
 
 ## Fuentes
 - https://www.hdmi.org/spec21sub/hdmi21a

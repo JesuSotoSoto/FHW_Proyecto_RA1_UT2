@@ -15,7 +15,7 @@
 
 ## Fotos
 
-![<alt>](../../../assets/img/10-conectores_internos/PCIe.jpg)
+![PCIe](../../../assets/img/10-conectores_internos/PCIe.jpg "PCIe")
 
 ## Enlaces
 -https://graphicscardhub.com/graphics-card-pcie-power-connectors/?utm_source

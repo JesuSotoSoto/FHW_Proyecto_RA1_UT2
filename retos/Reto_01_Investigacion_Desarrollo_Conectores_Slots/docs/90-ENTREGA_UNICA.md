@@ -57,7 +57,7 @@ Objetivo del reto: **identificar** y **explicar** conectores/slots **actuales** 
 
 ## Fotos
 
-![<alt>](../assets/img/10-conectores_internos/12VHPWR.jpg)
+![12VHPWR / 12V-2x6](../assets/img/10-conectores_internos/12VHPWR.jpg "12VHPWR / 12V-2x6")
 
 ## Enlaces
 
@@ -99,7 +99,7 @@ Objetivo del reto: **identificar** y **explicar** conectores/slots **actuales** 
 
 ## Fotos
 
-![EPS](../assets/img/10-conectores_internos/EPS.jpg)
+![EPS](../assets/img/10-conectores_internos/EPS.jpg "EPS de 8 pines" ) 
 
 ## Enlaces 
 
@@ -122,11 +122,12 @@ Objetivo del reto: **identificar** y **explicar** conectores/slots **actuales** 
 
 ## Fotos
 
-![<alt>](../assets/img/10-conectores_internos/Molex.jpg)
+![Molex (legacy)](../assets/img/10-conectores_internos/Molex.jpg "Molex (legacy)" )
 
 ## Enlaces
 
 -https://allpinouts.org/pinouts/connectors/power_supply/molex_8981_peripheral_power_connector/
+
 # Conector: PCIe
 
 **Descripción breve:** Alimenta tarjetas gráficas y dispositivos PCI Express.
@@ -144,10 +145,11 @@ Objetivo del reto: **identificar** y **explicar** conectores/slots **actuales** 
 
 ## Fotos
 
-![<alt>](../assets/img/10-conectores_internos/PCIe.jpg)
+![PCIe](../assets/img/10-conectores_internos/PCIe.jpg "PCIe")
 
 ## Enlaces
 -https://graphicscardhub.com/graphics-card-pcie-power-connectors/?utm_source
+
 # Conector:SATA Power
 
 **Descripción breve:** Alimenta unidades SATA (HDD, SSD, ópticas).
@@ -165,7 +167,7 @@ Objetivo del reto: **identificar** y **explicar** conectores/slots **actuales** 
 
 ## Fotos
 
-![Sata](../assets/img/10-conectores_internos/Sata.jpg)
+![Sata](../assets/img/10-conectores_internos/Sata.jpg "SATA Power")
 
 ## Enlaces
 
@@ -200,7 +202,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - Hot-swap según controladora; no lleva alimentación (va por conector SATA power).
 
 ## Fotos
-![Cable SATA](../assets/img/11-conectores_datos/sata_cable.jpg)
+![Cable SATA](../assets/img/11-conectores_datos/sata_cable.jpg "SATA (Serial ATA)")
 
 ## Fuentes
 
@@ -221,7 +223,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - Formato principal actual; depende del soporte de la placa base.
 
 ## Fotos
-![<alt>](../assets/img/11-conectores_datos/M.2.jpg)
+![M.2 (NVMe/SATA)](../assets/img/11-conectores_datos/M.2.jpg "M.2 (NVMe/SATA)" )
 
 ## Fuentes
 
@@ -242,7 +244,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - Menos común en equipos domésticos; usado en estaciones o servidores.
 
 ## Fotos
-![<alt>](../assets/img/11-conectores_datos/U.2.jpg)
+![U.2](../assets/img/11-conectores_datos/U.2.jpg "U.2" )
 
 ## Fuentes
 
@@ -275,7 +277,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - Común en portátiles y placas base modernas; sustituye a mPCIe.
 
 ## Fotos
-![<M.2>](../assets/img/12-slots_expansion/M.2.jpg "<M.2>")
+![M.2](../assets/img/12-slots_expansion/M.2.jpg "M.2")
 
 ## Fuentes
 - https://www.intel.com/content/www/us/en/support/articles/000026519/wireless.html
@@ -326,7 +328,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - DP 2.x soporta 8K/10K y modo alterno USB-C.
 
 ## Fotos
-![<alt>](../assets/img/20-conectores_externos/display.jpg)
+![DisplayPort 1.4 / 2.x](../assets/img/20-conectores_externos/display.jpg "DisplayPort 1.4 / 2.x" )
 
 ## Fuentes
 - https://vesa.org/standards/displayport/
@@ -346,7 +348,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - Retrocompatible con HDMI 1.x; requiere cable “Ultra High Speed”.
 
 ## Fotos
-![<alt>](../assets/img/20-conectores_externos/hdmi.jpg)
+![HDMI 2.1](../assets/img/20-conectores_externos/hdmi.jpg "HDMI 2.1" )
 
 ## Fuentes
 - https://www.hdmi.org/spec21sub/hdmi21a
@@ -366,7 +368,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - 2.5G y 10G dependen del cableado (Cat 6+); PoE opcional.
 
 ## Fotos
-![<alt>](../assets/img/20-conectores_externos/rj.jpg)
+![RJ-45 (1G / 2.5G / 10G)](../assets/img/20-conectores_externos/rj.jpg "RJ-45 (1G / 2.5G / 10G)")
 
 ## Fuentes
 - https://standards.ieee.org/ieee/802.3/7453/
@@ -404,7 +406,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - USB-A sigue muy extendido; limitado frente a USB-C.
 
 ## Fotos
-![<alt>](../assets/img/20-conectores_externos/usb.jpg)
+![USB-A 2.0 / 3.x](../assets/img/20-conectores_externos/usb.jpg "USB-A 2.0 / 3.x")
 
 ## Fuentes
 - https://usb.org/document-library/usb-32-specification-released
@@ -424,7 +426,7 @@ storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source
 - En desuso en equipos modernos; aún presente en hardware profesional.
 
 ## Fotos
-![<alt>](../assets/img/20-conectores_externos/usb-b.jpg)
+![USB-B](../assets/img/20-conectores_externos/usb-b.jpg "USB-B")
 
 ## Fuentes
 - https://usb.org/defined-usb-connectors-cables

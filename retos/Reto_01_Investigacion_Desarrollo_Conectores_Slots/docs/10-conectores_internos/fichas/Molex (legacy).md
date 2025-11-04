@@ -15,7 +15,7 @@
 
 ## Fotos
 
-![<alt>](../../../assets/img/10-conectores_internos/Molex.jpg)
+![Molex (legacy)](../../../assets/img/10-conectores_internos/Molex.jpg "Molex (legacy)" )
 
 ## Enlaces
 

@@ -16,7 +16,7 @@
 
 ## Fotos
 
-![<alt>](../../../assets/img/10-conectores_internos/12VHPWR.jpg)
+![12VHPWR / 12V-2x6](../../../assets/img/10-conectores_internos/12VHPWR.jpg "12VHPWR / 12V-2x6")
 
 ## Enlaces
 
