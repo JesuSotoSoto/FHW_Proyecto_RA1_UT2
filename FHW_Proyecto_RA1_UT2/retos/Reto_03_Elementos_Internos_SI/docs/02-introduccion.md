@@ -1,0 +1,2 @@
+# 02 — Introducción
+En este reto investigamos **fuentes de alimentación**, **sistemas de refrigeración**, **RAM/CPU** para usos distintos y analizamos **GPUs** comparando las recomendaciones de un vídeo con **precios reales** de tiendas. El resultado final se consolida en un **PDF único**.

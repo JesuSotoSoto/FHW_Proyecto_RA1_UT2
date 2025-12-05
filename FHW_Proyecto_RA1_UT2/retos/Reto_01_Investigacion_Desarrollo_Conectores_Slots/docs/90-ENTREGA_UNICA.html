@@ -1,0 +1,623 @@
+<!DOCTYPE html><html><head>
+      <title>90-ENTREGA_UNICA</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Usuario\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="entrega-única---reto-01">ENTREGA ÚNICA - Reto 01 </h1>
+<h2 id="índice">Índice </h2>
+<ul>
+<li><a href="#portada">Portada</a></li>
+<li><a href="#1-introduccion">1. Introducción</a></li>
+<li><a href="#2-conectores-internos-energia">2. Conectores internos (energía)</a></li>
+<li><a href="#3-conectores-de-datos">3. Conectores de datos</a></li>
+<li><a href="#4-slots-de-expansion">4. Slots de expansión</a></li>
+<li><a href="#5-conectores-externos">5. Conectores externos</a></li>
+<li><a href="#6-bibliografia">6. Bibliografía</a></li>
+</ul>
+<p><a id="portada" href=""></a></p>
+<h2 id="portada">Portada </h2>
+<h1 id="reto-1--investigación_desarrollo_conectores_slots">Reto 1 — Investigación_Desarrollo_Conectores_Slots </h1>
+<p><strong>Módulo:</strong> Fundamentos de Hardware (ASIR)<br>
+<strong>Alumno/a:</strong> Jesus Soto Soto<br>
+<strong>Curso:</strong> 2025/26</p>
+<p><img src="../assets/img/00-portada/portada.png" alt="Portada" title="Portada"></p>
+<p><a id="1-introduccion" href=""></a></p>
+<h2 id="1-introducción">1. Introducción </h2>
+<h1 id="introducción">Introducción </h1>
+<p>Piensa el PC como una <strong>ciudad</strong>:</p>
+<ul>
+<li><strong>Conectores</strong> = <strong>carreteras y puentes</strong> (energía y datos).</li>
+<li><strong>Slots</strong> = <strong>parcelas</strong> para ampliar (tarjetas).</li>
+</ul>
+<p>Objetivo del reto: <strong>identificar</strong> y <strong>explicar</strong> conectores/slots <strong>actuales</strong> y conectores/slots antiguos pero aun en uso.</p>
+<p><a id="2-conectores-internos-energia" href=""></a></p>
+<h2 id="2-conectores-internos-energía">2. Conectores internos (energía) </h2>
+<h1 id="conectores-12vhpwr--12v-2x6">Conectores: 12VHPWR / 12V-2x6 </h1>
+<p><strong>Descripción breve:</strong> Nuevo conector de alto rendimiento para GPUs &gt; 300 W.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> Hasta 600 W / +12 V / líneas de detección<br>
+<strong>Uso principal:</strong> GPU PCIe 5.0/ATX 3.0.<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física">Identificación física </h2>
+<ul>
+<li>Compacto de 16 pines (12 potencia + 4 señal); cable grueso, diseño moderno PCIe 5.0.</li>
+</ul>
+<h2 id="notas-técnicas">Notas técnicas </h2>
+<ul>
+<li>12V-2x6 mejora seguridad y flexibilidad del 12VHPWR original.</li>
+</ul>
+<h2 id="fotos">Fotos </h2>
+<p><img src="../assets/img/10-conectores_internos/12VHPWR.jpg" alt="12VHPWR / 12V-2x6" title="12VHPWR / 12V-2x6"></p>
+<h2 id="enlaces">Enlaces </h2>
+<p>-<a href="https://www.tomshardware.com/news/pcie-5-power-connector-600w-next-gen-amd-nvidia-gpus?utm_source">https://www.tomshardware.com/news/pcie-5-power-connector-600w-next-gen-amd-nvidia-gpus?utm_source</a></p>
+<h1 id="conector-atx-de-24-pines">Conector: ATX de 24 pines </h1>
+<p><strong>Descripción breve:</strong> Conector principal que alimenta la placa base en sistemas ATX/ATX12V.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 24 pines · +3.3V, +5V, +12V<br>
+<strong>Uso principal:</strong> Alimentación de la placa base<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-1">Identificación física </h2>
+<ul>
+<li>Bloque rectangular de 24 pines con clip, situado en el borde de la placa base.</li>
+</ul>
+<h2 id="notas-técnicas-1">Notas técnicas </h2>
+<ul>
+<li>Estándar ATX12V 2.x. No confundir con el EPS de CPU (4/8 pines).</li>
+</ul>
+<h2 id="fotos-1">Fotos </h2>
+<p><img src="../assets/img/10-conectores_internos/atx-24-pin.jpg" alt="ATX 24p" title="ATX 24p"></p>
+<h2 id="fuentes">Fuentes </h2>
+<ul>
+<li><a href="https://www.profesionalreview.com/2018/11/10/alimentacion-atx-24-pines-eps/">https://www.profesionalreview.com/2018/11/10/alimentacion-atx-24-pines-eps/</a></li>
+</ul>
+<h1 id="conector-eps-de-8-pines">Conector: EPS de 8 pines </h1>
+<p><strong>Descripción breve:</strong> Suministra energía dedicada al procesador.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 8 pines (2×4) / +12 V / hasta 336 W aprox.<br>
+<strong>Uso principal:</strong> Alimentación del procesador (CPU).<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-2">Identificación física </h2>
+<ul>
+<li>Conector negro dividido 4+4 pines; encaja en zona superior de la placa base (CPU).</li>
+</ul>
+<h2 id="notas-técnicas-2">Notas técnicas </h2>
+<ul>
+<li>Estándar ATX12V/EPS12V; algunos sistemas requieren doble conector.</li>
+</ul>
+<h2 id="fotos-2">Fotos </h2>
+<p><img src="../assets/img/10-conectores_internos/EPS.jpg" alt="EPS" title="EPS de 8 pines"></p>
+<h2 id="enlaces-1">Enlaces </h2>
+<p>-<a href="https://allpinouts.org/pinouts/connectors/power_supply/eps12v-eatx12v-8-pin/?utm_source=">https://allpinouts.org/pinouts/connectors/power_supply/eps12v-eatx12v-8-pin/?utm_source=</a></p>
+<h1 id="conectores-molex-legacy">Conectores: Molex (legacy) </h1>
+<p><strong>Descripción breve:</strong> Alimenta periféricos y ventiladores antiguos.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 4 pines / +12 V, +5 V / hasta 132 W aprox.<br>
+<strong>Uso principal:</strong> Ventiladores, bombas, accesorios antiguos.<br>
+<strong>Compatibilidad actual:</strong> Baja</p>
+<h2 id="identificación-física-3">Identificación física </h2>
+<ul>
+<li>Rectangular blanco de 4 pines grandes; carcasa rígida.</li>
+</ul>
+<h2 id="notas-técnicas-3">Notas técnicas </h2>
+<ul>
+<li>En desuso; aún presente por compatibilidad heredada.</li>
+</ul>
+<h2 id="fotos-3">Fotos </h2>
+<p><img src="../assets/img/10-conectores_internos/Molex.jpg" alt="Molex (legacy)" title="Molex (legacy)"></p>
+<h2 id="enlaces-2">Enlaces </h2>
+<p>-<a href="https://allpinouts.org/pinouts/connectors/power_supply/molex_8981_peripheral_power_connector/">https://allpinouts.org/pinouts/connectors/power_supply/molex_8981_peripheral_power_connector/</a></p>
+<h1 id="conector-pcie">Conector: PCIe </h1>
+<p><strong>Descripción breve:</strong> Alimenta tarjetas gráficas y dispositivos PCI Express.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 6 pines = 75 W, 8 pines = 150 W / +12 V<br>
+<strong>Uso principal:</strong> GPU, tarjetas de expansión.<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-4">Identificación física </h2>
+<ul>
+<li>Conector negro con pines cuadrados/biselados; versiones 6 pines o 6+2</li>
+</ul>
+<h2 id="notas-técnicas-4">Notas técnicas </h2>
+<ul>
+<li>Aún estándar; coexistente con 12VHPWR. Se pueden combinar.</li>
+</ul>
+<h2 id="fotos-4">Fotos </h2>
+<p><img src="../assets/img/10-conectores_internos/PCIe.jpg" alt="PCIe" title="PCIe"></p>
+<h2 id="enlaces-3">Enlaces </h2>
+<p>-<a href="https://graphicscardhub.com/graphics-card-pcie-power-connectors/?utm_source">https://graphicscardhub.com/graphics-card-pcie-power-connectors/?utm_source</a></p>
+<h1 id="conectorsata-power">Conector:SATA Power </h1>
+<p><strong>Descripción breve:</strong> Alimenta unidades SATA (HDD, SSD, ópticas).<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 15 pines / +3.3 V, +5 V, +12 V / hasta 54 W<br>
+<strong>Uso principal:</strong> Almacenamiento SATA.<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-5">Identificación física </h2>
+<ul>
+<li>Plano, alargado y fino, con muesca en L asimétrica.</li>
+</ul>
+<h2 id="notas-técnicas-5">Notas técnicas </h2>
+<ul>
+<li>Sustituyó al Molex; admite conversores a Molex o PCIe.</li>
+</ul>
+<h2 id="fotos-5">Fotos </h2>
+<p><img src="../assets/img/10-conectores_internos/Sata.jpg" alt="Sata" title="SATA Power"></p>
+<h2 id="enlaces-4">Enlaces </h2>
+<p>-<a href="https://allpinouts.org/pinouts/connectors/data_">https://allpinouts.org/pinouts/connectors/data_</a><br>
+storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source</p>
+<table>
+<thead>
+<tr>
+<th>Conector</th>
+<th>Identificación física</th>
+<th>Descripción breve</th>
+<th>Pines / Carriles / Voltajes / Velocidad</th>
+<th>Uso principal</th>
+<th>Compatibilidad actual</th>
+<th>Referencia técnica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ATX 24 pines</strong></td>
+<td>Conector grande rectangular de 24 pines en placa base</td>
+<td>Alimentación principal de la placa base</td>
+<td>24 p / +3.3 V, +5 V, +12 V / ~300 W</td>
+<td>Placa base</td>
+<td>Alta</td>
+<td><a href="https://allpinouts.org/pinouts/connectors/power_supply/atx-24-pin/">AllPinouts</a></td>
+</tr>
+<tr>
+<td><strong>EPS 8 pines (4+4)</strong></td>
+<td>4+4 pines negros en CPU</td>
+<td>Alimentación dedicada al procesador</td>
+<td>8 p / +12 V / ~336 W</td>
+<td>CPU</td>
+<td>Alta</td>
+<td><a href="https://allpinouts.org/pinouts/connectors/power_supply/eps12v-eatx12v-8-pin/">AllPinouts</a></td>
+</tr>
+<tr>
+<td><strong>SATA Power</strong></td>
+<td>Conector plano en “L”</td>
+<td>Energía para discos SATA (HDD/SSD)</td>
+<td>15 p / +3.3 V, +5 V, +12 V / ~54 W</td>
+<td>Almacenamiento</td>
+<td>Alta</td>
+<td><a href="https://allpinouts.org/pinouts/connectors/data_storage/serial-ata-sata-serial-advanced-technology-attachment/">AllPinouts</a></td>
+</tr>
+<tr>
+<td><strong>PCIe 6/8 pines</strong></td>
+<td>Conector negro 6 o 6+2 pines</td>
+<td>Alimentación para GPU o tarjetas PCIe</td>
+<td>6 p = 75 W, 8 p = 150 W / +12 V</td>
+<td>GPU</td>
+<td>Alta</td>
+<td><a href="https://graphicscardhub.com/graphics-card-pcie-power-connectors/">GraphicsCardHub</a></td>
+</tr>
+<tr>
+<td><strong>12VHPWR / 12V-2x6</strong></td>
+<td>Compacto 16 pines (12 + 4)</td>
+<td>Alimenta GPUs PCIe 5.0 (hasta 600 W)</td>
+<td>12 V / 600 W máx</td>
+<td>GPU ATX 3.0</td>
+<td>Alta</td>
+<td><a href="https://www.tomshardware.com/news/pcie-5-power-connector-600w-next-gen-amd-nvidia-gpus">Tom’s Hardware</a></td>
+</tr>
+<tr>
+<td><strong>Molex (legacy)</strong></td>
+<td>Blanco 4 pines grandes</td>
+<td>Periféricos antiguos y ventiladores</td>
+<td>4 p / +5 V, +12 V / ~132 W</td>
+<td>Accesorios antiguos</td>
+<td>Baja</td>
+<td><a href="https://allpinouts.org/pinouts/connectors/power_supply/molex_8981_peripheral_power_connector/">AllPinouts</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a id="3-conectores-de-datos" href=""></a></p>
+<h2 id="3-conectores-de-datos">3. Conectores de datos </h2>
+<h1 id="conector-de-datos-sata-serial-ata">Conector de datos: SATA (Serial ATA) </h1>
+<p><strong>Descripción breve:</strong> Interfaz de datos en serie para conectar HDD/SSD/unidades ópticas.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 7 pines · 1.5/3/6 Gbps (SATA I/II/III)<br>
+<strong>Uso principal:</strong> Conexión de almacenamiento interno común<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-6">Identificación física </h2>
+<ul>
+<li>Conector plano en forma de L; cables delgados, longitud típica ≤1 m.</li>
+</ul>
+<h2 id="notas-técnicas-6">Notas técnicas </h2>
+<ul>
+<li>Hot-swap según controladora; no lleva alimentación (va por conector SATA power).</li>
+</ul>
+<h2 id="fotos-6">Fotos </h2>
+<p><img src="../assets/img/11-conectores_datos/sata_cable.jpg" alt="Cable SATA" title="SATA (Serial ATA)"></p>
+<h2 id="fuentes-1">Fuentes </h2>
+<ul>
+<li><a href="https://allpinouts.org/pinouts/connectors/data_storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source">https://allpinouts.org/pinouts/connectors/data_storage/serial-ata-sata-serial-advanced-technology-attachment/?utm_source</a></li>
+</ul>
+<h1 id="conector-de-datos-m2-nvmesata">Conector de datos: M.2 (NVMe/SATA) </h1>
+<p><strong>Descripción breve:</strong> Conector interno para SSDs compactos tipo tarjeta.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> Hasta 4 carriles PCIe / NVMe: PCIe 4.0–5.0 x4 / hasta 32–64 Gb/s<br>
+<strong>Uso principal:</strong> SSD M.2 NVMe o SATA.<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-7">Identificación física </h2>
+<ul>
+<li>Ranura rectangular con tornillo de fijación; clave M (NVMe) o B/M (SATA).</li>
+</ul>
+<h2 id="notas-técnicas-7">Notas técnicas </h2>
+<ul>
+<li>Formato principal actual; depende del soporte de la placa base.</li>
+</ul>
+<h2 id="fotos-7">Fotos </h2>
+<p><img src="../assets/img/11-conectores_datos/M.2.jpg" alt="M.2 (NVMe/SATA)" title="M.2 (NVMe/SATA)"></p>
+<h2 id="fuentes-2">Fuentes </h2>
+<ul>
+<li><a href="https://www.kingston.com/es/blog/pc-performance/what-is-m2-sata-nvme-ssd">https://www.kingston.com/es/blog/pc-performance/what-is-m2-sata-nvme-ssd</a></li>
+</ul>
+<h1 id="conector-de-datos-u2">Conector de datos: U.2 </h1>
+<p><strong>Descripción breve:</strong> Interfaz de alto rendimiento para SSDs empresariales.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 68 pines / PCIe x4 / NVMe / hasta 32 Gb/s<br>
+<strong>Uso principal:</strong> SSDs NVMe 2.5" (entorno servidor/entusiasta).<br>
+<strong>Compatibilidad actual:</strong> Media</p>
+<h2 id="identificación-física-8">Identificación física </h2>
+<ul>
+<li>Conector rectangular similar al SATA Express, con múltiples segmentos.</li>
+</ul>
+<h2 id="notas-técnicas-8">Notas técnicas </h2>
+<ul>
+<li>Menos común en equipos domésticos; usado en estaciones o servidores.</li>
+</ul>
+<h2 id="fotos-8">Fotos </h2>
+<p><img src="../assets/img/11-conectores_datos/U.2.jpg" alt="U.2" title="U.2"></p>
+<h2 id="fuentes-3">Fuentes </h2>
+<ul>
+<li><a href="https://www.intel.com/content/www/us/en/products/docs/memory-storage/solid-state-drives/ssd-form-factors/u2-sff-8639.html">https://www.intel.com/content/www/us/en/products/docs/memory-storage/solid-state-drives/ssd-form-factors/u2-sff-8639.html</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Conector</th>
+<th>Identificación física</th>
+<th>Descripción breve</th>
+<th>Pines / Carriles / Voltajes / Velocidad</th>
+<th>Uso principal</th>
+<th>Compatibilidad actual</th>
+<th>Referencia técnica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SATA (datos)</strong></td>
+<td>Conector en L (7 pines)</td>
+<td>Interfaz de datos HDD/SSD</td>
+<td>7 p / 6 Gb/s</td>
+<td>Almacenamiento SATA</td>
+<td>Alta</td>
+<td><a href="https://allpinouts.org/pinouts/connectors/data_storage/serial-ata-sata-serial-advanced-technology-attachment/">AllPinouts</a></td>
+</tr>
+<tr>
+<td><strong>M.2 (NVMe/SATA)</strong></td>
+<td>Ranura plana con tornillo; clave M o B/M</td>
+<td>SSD compacto tipo tarjeta</td>
+<td>PCIe x4 / NVMe 4.0–5.0 / 64 Gb/s</td>
+<td>Almacenamiento SSD</td>
+<td>Alta</td>
+<td><a href="https://www.kingston.com/es/blog/pc-performance/what-is-m2-sata-nvme-ssd">Kingston</a></td>
+</tr>
+<tr>
+<td><strong>U.2 (opcional)</strong></td>
+<td>Similar a SATA Express, 68 pines</td>
+<td>Conexión NVMe 2.5″ empresarial</td>
+<td>PCIe x4 / 32 Gb/s</td>
+<td>SSD U.2</td>
+<td>Media</td>
+<td><a href="https://www.intel.com/content/www/us/en/products/docs/memory-storage/solid-state-drives/ssd-form-factors/u2-sff-8639.html">Intel</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a id="4-slots-de-expansion" href=""></a></p>
+<h2 id="4-slots-de-expansión">4. Slots de expansión </h2>
+<h1 id="slot-m2">Slot: M.2 </h1>
+<p><strong>Descripción breve:</strong> Slot interno para tarjetas inalámbricas Wi-Fi, Bluetooth o combo; usa interfaz PCIe y USB.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 75 pines / PCIe x1 + USB 2.0 / 3.3 V / hasta 5 Gb/s (según estándar PCIe)<br>
+<strong>Uso principal:</strong> Módulos inalámbricos (Wi-Fi, BT, CNVi, Intel AX/BE series).<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-9">Identificación física </h2>
+<ul>
+<li>Ranura M.2 corta (tipo 2230 o 1216), con una muesca en el lado derecho (clave E).</li>
+</ul>
+<h2 id="notas-técnicas-9">Notas técnicas </h2>
+<ul>
+<li>Común en portátiles y placas base modernas; sustituye a mPCIe.</li>
+</ul>
+<h2 id="fotos-9">Fotos </h2>
+<p><img src="../assets/img/12-slots_expansion/M.2.jpg" alt="M.2" title="M.2"></p>
+<h2 id="fuentes-4">Fuentes </h2>
+<ul>
+<li><a href="https://www.intel.com/content/www/us/en/support/articles/000026519/wireless.html">https://www.intel.com/content/www/us/en/support/articles/000026519/wireless.html</a></li>
+</ul>
+<h1 id="slot-pci-express-x16-gen4gen5">Slot: PCI Express x16 (Gen4/Gen5) </h1>
+<p><strong>Descripción breve:</strong> Ranura de expansión de altas prestaciones usada para GPUs/aceleradoras.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> x16 carriles · Gen4 16 GT/s · Gen5 32 GT/s<br>
+<strong>Uso principal:</strong> Tarjetas gráficas; también aceleradoras y NVMe en adaptador<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-10">Identificación física </h2>
+<ul>
+<li>Ranura larga con pestaña; color variable por fabricante.</li>
+</ul>
+<h2 id="notas-técnicas-10">Notas técnicas </h2>
+<ul>
+<li>Ancho de banda efectivo depende de generación y carriles disponibles (CPU/Chipset).</li>
+</ul>
+<h2 id="fotos-10">Fotos </h2>
+<p><img src="../assets/img/12-slots_expansion/pcie_x16.jpg" alt="PCIe x16" title="PCIe x16"></p>
+<h2 id="fuentes-5">Fuentes </h2>
+<ul>
+<li><a href="https://pcisig.com/specifications/pciexpress">https://pcisig.com/specifications/pciexpress</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Conector</th>
+<th>Identificación física</th>
+<th>Descripción breve</th>
+<th>Pines / Carriles / Voltajes / Velocidad</th>
+<th>Uso principal</th>
+<th>Compatibilidad actual</th>
+<th>Referencia técnica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PCI Express (x1/x4/x8/x16)</strong></td>
+<td>Ranuras largas según carriles</td>
+<td>Bus de expansión serial (GPU, NIC, SSD)</td>
+<td>Gen3–5 / 8–32 GT/s por carril / 3.3 V &amp; 12 V</td>
+<td>Tarjetas PCIe</td>
+<td>Alta</td>
+<td><a href="https://pcisig.com/specifications/pciexpress">PCI-SIG</a></td>
+</tr>
+<tr>
+<td><strong>M.2 E-Key (Wi-Fi/BT)</strong></td>
+<td>Ranura corta con muesca E (2230)</td>
+<td>Módulos Wi-Fi/Bluetooth o CNVi</td>
+<td>PCIe x1 + USB 2.0 / 5 Gb/s máx</td>
+<td>Red inalámbrica</td>
+<td>Alta</td>
+<td><a href="https://www.intel.com/content/www/us/en/support/articles/000026519/wireless.html">Intel</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a id="5-conectores-externos" href=""></a></p>
+<h2 id="5-conectores-externos">5. Conectores externos </h2>
+<h1 id="conector-externo-displayport-14--2x">Conector externo: DisplayPort 1.4 / 2.x </h1>
+<p><strong>Descripción breve:</strong> Interfaz de vídeo digital de alto rendimiento (alternativa a HDMI).<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 1.4 = 32.4 Gb/s, 2.1 = 80 Gb/s / +3.3 V<br>
+<strong>Uso principal:</strong> Monitores de PC, docking stations, GPU.<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-11">Identificación física </h2>
+<ul>
+<li>Conector rectangular con una esquina en bisel; 20 pines.</li>
+</ul>
+<h2 id="notas-técnicas-11">Notas técnicas </h2>
+<ul>
+<li>DP 2.x soporta 8K/10K y modo alterno USB-C.</li>
+</ul>
+<h2 id="fotos-11">Fotos </h2>
+<p><img src="../assets/img/20-conectores_externos/display.jpg" alt="DisplayPort 1.4 / 2.x" title="DisplayPort 1.4 / 2.x"></p>
+<h2 id="fuentes-6">Fuentes </h2>
+<ul>
+<li><a href="https://vesa.org/standards/displayport/">https://vesa.org/standards/displayport/</a></li>
+</ul>
+<h1 id="conector-externo-hdmi-21">Conector externo: HDMI 2.1 </h1>
+<p><strong>Descripción breve:</strong> Transmite vídeo/audio digital hasta 10K y HDR dinámico.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 48 Gb/s / +5 V / TMDS o FRL (4 lanes)<br>
+<strong>Uso principal:</strong> Monitores, TVs, GPUs, consolas.<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-12">Identificación física </h2>
+<ul>
+<li>Conector trapezoidal de 19 pines; color negro o plateado.</li>
+</ul>
+<h2 id="notas-técnicas-12">Notas técnicas </h2>
+<ul>
+<li>Retrocompatible con HDMI 1.x; requiere cable “Ultra High Speed”.</li>
+</ul>
+<h2 id="fotos-12">Fotos </h2>
+<p><img src="../assets/img/20-conectores_externos/hdmi.jpg" alt="HDMI 2.1" title="HDMI 2.1"></p>
+<h2 id="fuentes-7">Fuentes </h2>
+<ul>
+<li><a href="https://www.hdmi.org/spec21sub/hdmi21a">https://www.hdmi.org/spec21sub/hdmi21a</a></li>
+</ul>
+<h1 id="conector-externo-rj-45-1g--25g--10g">Conector externo: RJ-45 (1G / 2.5G / 10G) </h1>
+<p><strong>Descripción breve:</strong> Estándar de red Ethernet cableada (Cat 5e–Cat 6a/7).<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 8 pines / 1 Gb/s → 10 Gb/s / 1 V TTL<br>
+<strong>Uso principal:</strong> Redes LAN, Internet, NAS, routers.<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-13">Identificación física </h2>
+<ul>
+<li>Conector rectangular transparente de 8 pines (8P8C).</li>
+</ul>
+<h2 id="notas-técnicas-13">Notas técnicas </h2>
+<ul>
+<li>2.5G y 10G dependen del cableado (Cat 6+); PoE opcional.</li>
+</ul>
+<h2 id="fotos-13">Fotos </h2>
+<p><img src="../assets/img/20-conectores_externos/rj.jpg" alt="RJ-45 (1G / 2.5G / 10G)" title="RJ-45 (1G / 2.5G / 10G)"></p>
+<h2 id="fuentes-8">Fuentes </h2>
+<ul>
+<li><a href="https://standards.ieee.org/ieee/802.3/7453/">https://standards.ieee.org/ieee/802.3/7453/</a></li>
+</ul>
+<h1 id="conector-externo-usb-c-usb4pd">Conector externo: USB-C (USB4/PD) </h1>
+<p><strong>Descripción breve:</strong> Conector reversible para datos, vídeo y alimentación (PD).<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 24 pines · USB4 hasta 40 Gbps · PD hasta 100–240 W (según perfil)<br>
+<strong>Uso principal:</strong> Carga y conexión de periféricos/monitores/docks<br>
+<strong>Compatibilidad actual:</strong> Alta (ojo: no todo USB-C soporta TB/PD)</p>
+<h2 id="identificación-física-14">Identificación física </h2>
+<ul>
+<li>Ovalado y simétrico; símbolos: rayo (Thunderbolt), “SS” (SuperSpeed).</li>
+</ul>
+<h2 id="notas-técnicas-14">Notas técnicas </h2>
+<ul>
+<li>Requisitos de cable para 40 Gbps/240 W; DP Alt Mode para vídeo si no es TB.</li>
+</ul>
+<h2 id="fotos-14">Fotos </h2>
+<p><img src="../assets/img/20-conectores_externos/usb_c.jpg" alt="USB-C" title="USB-C"></p>
+<h2 id="fuentes-9">Fuentes </h2>
+<ul>
+<li><a href="https://usb.org/document-library/usb4-specification">https://usb.org/document-library/usb4-specification</a></li>
+</ul>
+<h1 id="conector-externo-usb-a-20--3x">Conector externo: USB-A 2.0 / 3.x </h1>
+<p><strong>Descripción breve:</strong> Conector de datos y carga más común en PCs y periféricos.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 2.0 = 480 Mb/s, 3.2 Gen 1 = 5 Gb/s, Gen 2 = 10 Gb/s / 5 V (0.5–0.9 A)<br>
+<strong>Uso principal:</strong> Periféricos (ratón, teclado, almacenamiento).<br>
+<strong>Compatibilidad actual:</strong> Alta</p>
+<h2 id="identificación-física-15">Identificación física </h2>
+<ul>
+<li>Rectangular clásico; 4 pines (2.0) o 9 pines (3.x, con contactos azules).</li>
+</ul>
+<h2 id="notas-técnicas-15">Notas técnicas </h2>
+<ul>
+<li>USB-A sigue muy extendido; limitado frente a USB-C.</li>
+</ul>
+<h2 id="fotos-15">Fotos </h2>
+<p><img src="../assets/img/20-conectores_externos/usb.jpg" alt="USB-A 2.0 / 3.x" title="USB-A 2.0 / 3.x"></p>
+<h2 id="fuentes-10">Fuentes </h2>
+<ul>
+<li><a href="https://usb.org/document-library/usb-32-specification-released">https://usb.org/document-library/usb-32-specification-released</a></li>
+</ul>
+<h1 id="conector-externo-usb-b">Conector externo: USB-B </h1>
+<p><strong>Descripción breve:</strong> Conector de host-device, usado en impresoras, DACs, hubs y equipos de laboratorio.<br>
+<strong>Pines/Carriles/Voltajes/Velocidad:</strong> 2.0 = 480 Mb/s, 3.0 = 5 Gb/s / 5 V<br>
+<strong>Uso principal:</strong> Comunicación PC ↔ periférico.<br>
+<strong>Compatibilidad actual:</strong> Media</p>
+<h2 id="identificación-física-16">Identificación física </h2>
+<ul>
+<li>Cuadrado con esquinas biseladas superiores; suele ser azul en versiones 3.x.</li>
+</ul>
+<h2 id="notas-técnicas-16">Notas técnicas </h2>
+<ul>
+<li>En desuso en equipos modernos; aún presente en hardware profesional.</li>
+</ul>
+<h2 id="fotos-16">Fotos </h2>
+<p><img src="../assets/img/20-conectores_externos/usb-b.jpg" alt="USB-B" title="USB-B"></p>
+<h2 id="fuentes-11">Fuentes </h2>
+<ul>
+<li><a href="https://usb.org/defined-usb-connectors-cables">https://usb.org/defined-usb-connectors-cables</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Conector</th>
+<th>Identificación física</th>
+<th>Descripción breve</th>
+<th>Pines / Carriles / Voltajes / Velocidad</th>
+<th>Uso principal</th>
+<th>Compatibilidad actual</th>
+<th>Referencia técnica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>USB-C / USB4</strong></td>
+<td>Reversible, ovalado</td>
+<td>Datos, vídeo y carga (PD 100 W)</td>
+<td>24 p / 40 Gb/s / 5–20 V</td>
+<td>Universal I/O</td>
+<td>Alta</td>
+<td><a href="https://usb.org/document-library/usb4-specification">USB-IF</a></td>
+</tr>
+<tr>
+<td><strong>USB-A 2.0/3.x</strong></td>
+<td>Rectangular, 4 o 9 pines (azul = 3.x)</td>
+<td>Periféricos y almacenamiento</td>
+<td>480 Mb/s → 10 Gb/s / 5 V</td>
+<td>Periféricos clásicos</td>
+<td>Alta</td>
+<td><a href="https://usb.org/document-library/usb-32-specification-released">USB-IF</a></td>
+</tr>
+<tr>
+<td><strong>USB-B</strong></td>
+<td>Cuadrado biselado; azul (3.x)</td>
+<td>Conector host-device (impresoras, DACs)</td>
+<td>480 Mb/s → 5 Gb/s / 5 V</td>
+<td>Periféricos</td>
+<td>Media</td>
+<td><a href="https://usb.org/defined-usb-connectors-cables">USB-IF</a></td>
+</tr>
+<tr>
+<td><strong>HDMI 2.1</strong></td>
+<td>Trapezoidal 19 pines</td>
+<td>Vídeo/audio digital hasta 10K HDR</td>
+<td>48 Gb/s / +5 V</td>
+<td>Monitores y TVs</td>
+<td>Alta</td>
+<td><a href="https://www.hdmi.org/spec21sub/hdmi21a">HDMI.org</a></td>
+</tr>
+<tr>
+<td><strong>DisplayPort 1.4 / 2.x</strong></td>
+<td>Rectangular 20 p con bisel</td>
+<td>Vídeo digital 8K/10K</td>
+<td>32.4–80 Gb/s / +3.3 V</td>
+<td>Monitores PC</td>
+<td>Alta</td>
+<td><a href="https://vesa.org/standards/displayport/">VESA</a></td>
+</tr>
+<tr>
+<td><strong>RJ-45 (1G/2.5G/10G)</strong></td>
+<td>Transparente 8P8C</td>
+<td>Conector Ethernet LAN</td>
+<td>8 p / 1–10 Gb/s / PoE opcional</td>
+<td>Red cableada</td>
+<td>Alta</td>
+<td><a href="https://standards.ieee.org/ieee/802.3/7453/">IEEE 802.3</a></td>
+</tr>
+</tbody>
+</table>
+<p><a id="6-bibliografia" href=""></a></p>
+<h2 id="6-bibliografía">6. Bibliografía </h2>
+<ul>
+<li><a href="https://allpinouts.org/pinouts/connectors/power_supply/atx-24-pin/">ATX 24-pin</a></li>
+<li><a href="https://allpinouts.org/pinouts/connectors/power_supply/eps12v-eatx12v-8-pin/">EPS 8-pin (4+4)</a></li>
+<li><a href="https://allpinouts.org/pinouts/connectors/data_storage/serial-ata-sata-serial-advanced-technology-attachment/">SATA Power / SATA Data</a></li>
+<li><a href="https://graphicscardhub.com/graphics-card-pcie-power-connectors/">PCIe 6/8-pin</a></li>
+<li><a href="https://www.tomshardware.com/news/pcie-5-power-connector-600w-next-gen-amd-nvidia-gpus">12VHPWR / PCIe 5.0</a></li>
+<li><a href="https://allpinouts.org/pinouts/connectors/power_supply/molex_8981_peripheral_power_connector/">Molex 4-pin</a></li>
+<li><a href="https://www.kingston.com/es/blog/pc-performance/what-is-m2-sata-nvme-ssd">M.2 NVMe/SATA</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/products/docs/memory-storage/solid-state-drives/ssd-form-factors/u2-sff-8639.html">U.2</a></li>
+<li><a href="https://pcisig.com/specifications/pciexpress">PCIe Slot</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/support/articles/000026519/wireless.html">M.2 E-Key Wi-Fi/BT</a></li>
+<li><a href="https://usb.org/document-library/usb4-specification">USB4 / USB-C</a></li>
+<li><a href="https://usb.org/document-library/usb-32-specification-released">USB 3.x / USB-A</a></li>
+<li><a href="https://usb.org/defined-usb-connectors-cables">USB-B</a></li>
+<li><a href="https://www.hdmi.org/spec21sub/hdmi21a">HDMI 2.1</a></li>
+<li><a href="https://vesa.org/standards/displayport/">DisplayPort 1.4 / 2.x</a></li>
+<li><a href="https://standards.ieee.org/ieee/802.3/7453/">RJ-45 / Ethernet</a></li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

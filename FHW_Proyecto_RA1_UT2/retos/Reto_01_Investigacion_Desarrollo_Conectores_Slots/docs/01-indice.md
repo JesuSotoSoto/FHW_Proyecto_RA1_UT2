@@ -1,0 +1,16 @@
+# Índice
+
+1. [Portada](00-portada.md)  
+2. [Índice](01-indice.md)  
+3. [Introducción](02-introduccion.md)  
+4. Conectores internos (energía) — [`10-conectores_internos/`](10-conectores_internos/README.md)  
+   - Fichas: [12VHPWR](10-conectores_internos/fichas/12VHPWR.md), [ATX 24p](10-conectores_internos/fichas/ejemplo_atx_24p.md) , [EPS](10-conectores_internos/fichas/EPS.md) , [Molex(legacy)](10-conectores_internos/fichas/Molex%20(legacy).md) , [Sata](10-conectores_internos/fichas/Sata%20Power.md) , [ATX 24p](10-conectores_internos/fichas/PCIe.md)
+5. Conectores de datos — [`11-conectores_datos/`](11-conectores_datos/README.md)  
+   - Fichas: [U.2](11-conectores_datos/fichas/U.2.md), [SATA](11-conectores_datos/fichas/sata.md), [M.2(SATA)](11-conectores_datos/fichas/M.2(SATA).md)
+6. Slots de expansión — [`12-slots_expansion/`](12-slots_expansion/README.md)  
+   - Fichas: [M.2](12-slots_expansion/fichas/M.2.md), [PCIe x16](12-slots_expansion/fichas/pcie_x16.md)
+7. Conectores externos — [`20-conectores_externos/`](20-conectores_externos/README.md)  
+   - Fichas: [RJ-45](20-conectores_externos/fichas/RJ-45.md), [USB-C](20-conectores_externos/fichas/Usb_c.md) , [USB-B](20-conectores_externos/fichas/USB-B.md) , [USB-C](20-conectores_externos/fichas/HDMI_2.1.md), [USB-C](20-conectores_externos/fichas/USB-A_2.0%20.md) , [DisplayPort](20-conectores_externos/fichas/DisplayPort.md)
+8. [Bibliografía y fuentes](30-bibliografia.md)  
+9. [ENTREGA ÚNICA](90-ENTREGA_UNICA.md)  
+10. [Entrega y checklist](99-entrega_y_checklist.md)

@@ -1,0 +1,7 @@
+# Plantilla — Reflexión personal (≥100 palabras)
+
+Comenta cómo el chasis afecta a la **experiencia del usuario**:
+- **Ruido del sistema:** Segun que tipo de chasis puedes tener muchas vibraciones y sonido haciendo que sea muy molesto y que debido a las vibraciones puedan llegar a tener consecuencias en el sistema interno
+- **Temperatura:** La fluctacion de aire es muy importante y segun que tipo de tareas que quieres realizar la forma de tratarla puede ser diferente.Yo creo que lo mejor es tener la torre en una zona despejada que tenga buena ventilacion y que tenga al menos de 2 a 3 ventiladores y si te lo puedes permitir tener refrigeracion liquida,aunque es muy tediosa y esta enfocada para tareas muy exigentes
+- **Acceso a puertos:** Yo creo que lo ideal son 5 PCIe si no vas a exigir mucho al PC y segun que tipo de exigencias tengas pues ir buscando mas o meno y sobre los usb lo ideal seria entre 3-4
+- **Estética:** Para empezar la estetica no es importante si lo que buscas es rendimiento solamente, pero si buscas las dos yo creo que lo ideal seria que fuese de material de acero+aluminio debido a que es una gran aleación ya que se complementan muy bien por sus caracteristicas:el acero es muy resistente y el aluminio disipa muy bien el calor.Por ultimo buscar que tenga un cristal que te permita ver el pc internamente ya que por lo menos para mi es bastante estica,aunque, no es muy util si buscas rendimiento ademas esto depende de tus gustos y para que usaras el PC.

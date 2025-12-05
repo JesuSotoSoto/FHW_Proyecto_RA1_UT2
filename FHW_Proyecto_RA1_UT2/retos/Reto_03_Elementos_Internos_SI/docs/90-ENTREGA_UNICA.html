@@ -1,0 +1,921 @@
+<!DOCTYPE html><html><head>
+      <title>90-ENTREGA_UNICA</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\ironj\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.20\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="90--entrega-única-consolidado">90 — ENTREGA ÚNICA (consolidado) </h1>
+<h1 id="reto-03--elementos-internos-de-un-sistema-informático-ut2--ra1">Reto 03 — Elementos internos de un sistema informático (UT2 · RA1) </h1>
+<h1 id="portada">Portada </h1>
+<p><strong>Alumno/a:</strong> Soto Soto, Jesus<br>
+<strong>Grupo:</strong> ASIR 1<br>
+<strong>Fecha:</strong> 05-12-2025<br>
+<strong>Repositorio:</strong> <a href="https://github.com/JesuSotoSoto/FHW_Proyecto_RA1_UT2">GitHub</a></p>
+<h1 id="02--introducción">02 — Introducción </h1>
+<p>En este reto investigamos <strong>fuentes de alimentación</strong>, <strong>sistemas de refrigeración</strong>, <strong>RAM/CPU</strong> para usos distintos y analizamos <strong>GPUs</strong> comparando las recomendaciones de un vídeo con <strong>precios reales</strong> de tiendas. El resultado final se consolida en un <strong>PDF único</strong>.</p>
+<h1 id="parte-1--actividades-a-y-b-único-archivo">Parte 1 — Actividades A y B (único archivo) </h1>
+<h2 id="actividad-a--investigación-de-fuentes-de-alimentación-9-modelos">Actividad A — Investigación de <strong>Fuentes de Alimentación</strong> (9 modelos) </h2>
+<h3 id="tienda-1___pccomponentes___">Tienda 1:<em><strong>PcComponentes</strong></em> </h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Marca/Modelo</th>
+<th>Potencia (W)</th>
+<th>80 PLUS</th>
+<th style="text-align:right">Precio (€)</th>
+<th>Modularidad</th>
+<th>PFC</th>
+<th>Dimensiones (L×W×H mm)</th>
+<th>Enlace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATX</td>
+<td>Mars Gaming MPVU750SI</td>
+<td>750W</td>
+<td>Silver</td>
+<td style="text-align:right">64,90€</td>
+<td>No</td>
+<td>Activo</td>
+<td>150 (W) × 145 (L) × 85 (H) mm .</td>
+<td><a href="%22https://www.pccomponentes.com/fuente-alimentacion-mars-gaming-mpvu750si-fuente-alimentacion-atx-750w-10-anos-garantia-80-plus-silver-dc-dc-y-smd-roja%22">Pc</a></td>
+</tr>
+<tr>
+<td>SFX</td>
+<td>Corsair SF1000</td>
+<td>1000W</td>
+<td>Platinum</td>
+<td style="text-align:right">225,67€</td>
+<td>Si</td>
+<td>Activo</td>
+<td>125 mm (W) × 100 mm (L) × 63,5 mm (H) .</td>
+<td><a href="%22https://www.pccomponentes.com/fuente-alimentacion-corsair-sf1000-pcie-51-atx-31-1000w-80-plus-platinum-modular%22">Pc</a></td>
+</tr>
+<tr>
+<td>TFX</td>
+<td>UNYKAch 52004V2</td>
+<td>350W</td>
+<td>Bronze</td>
+<td style="text-align:right">31,57€</td>
+<td>No</td>
+<td>Activo</td>
+<td>175 mm (L) × 85 mm (W) × 65 mm (H) .</td>
+<td><a href="https://www.pccomponentes.com/unykach-52004v2-fuente-de-alimentacion-tfx-350w-80-plus-bronzehttps:/">Pc</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notas/criterios de la tienda 1:</strong></p>
+<p>-Buen servicio de envio y tienen mucho cuidado con los paquetes</p>
+<p>-Muy centrada a la tecnologia y tienen muchas caracteristicas relacionadas</p>
+<h3>Tienda 2: <em><strong>Amazon</strong></em> {#tienda-2-<em><strong>amazon</strong></em> }</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Marca/Modelo</th>
+<th>Potencia (W)</th>
+<th>80 PLUS</th>
+<th style="text-align:right">Precio (€)</th>
+<th>Modularidad</th>
+<th>PFC</th>
+<th>Dimensiones (L×W×H mm)</th>
+<th>Enlace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATX</td>
+<td>MSI mag A750GL PCIE5</td>
+<td>750W</td>
+<td>Gold</td>
+<td style="text-align:right">85,53€</td>
+<td>Si</td>
+<td>Activo</td>
+<td>150 (W) × 86 (H) × 140 (L) mm.</td>
+<td><a href="https://www.amazon.es/MSI-306-7ZP8B11-CE0-mag-A750GL-PCIE5/dp/B0C3M86HCB/ref=sr_1_3?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=7TJRTRKRAKG4&amp;dib=eyJ2IjoiMSJ9.F8a45KvfW1MCk7X2ByuDkjGCPcgZ_QnovDwsEgZ9hugBiRM9msFYogDvVteaYftHFI_UP5D7ccjyrHQRWCwef5OMBrPQU_Lx4Epe50N1I59yNaHLFl7OLESunfGHTOWKxWEtSqcQE5DHZR7Sq07BhKmKPJ8SlwPF30s9dfcp_S2_Lz8ehFn1v21XqBPPx5Q_DFogqxWWG1ajq7CuQHV7ra0Ri25mt9Q3rxAS6Z86EjjR4I3ONXTrQA-WweFrZ8FIQXrLsnnmGktRI1VocIKm0rTTBDI5g9So_oqX728r_Ag.njbtkDAFeKQaS_ynPbCi269G4HVcIMQIwIswpWuKLJ0&amp;dib_tag=se&amp;keywords=fuente%2Bde%2Balimentaci%C3%B3n%2Bftx&amp;qid=1762873654&amp;sprefix=fuente%2Bde%2Balimentaci%C3%B3n%2Bftx%2Caps%2C98&amp;sr=8-3&amp;th=1https:/">Amazon</a></td>
+</tr>
+<tr>
+<td>SFX</td>
+<td>Cooler Mater V850</td>
+<td>850W</td>
+<td>Gold</td>
+<td style="text-align:right">200€</td>
+<td>Si</td>
+<td>Activo</td>
+<td>125 (W) × 63.5 (H) × 100 (L) mm.</td>
+<td><a href="https://www.amazon.es/Cooler-Master-V850-Fuente-alimentaci%C3%B3n/dp/B08BKQ23XC/ref=sr_1_1_sspa?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;crid=24H84AOKXXBCQ&amp;dib=eyJ2IjoiMSJ9.i0rqWBo1vhLEXzYWFlsojlJAosBAB-qiZvxnsZVLd-v4QgiSzTxbcvsO8NvzwrXqAh8yuuJg6Glr_ViXqQ9Uvmz3XzG7hxz7HF5ZAclZzVWMLDYG2IUK3PZLkFOqLZjDJ9ZoJHC_iY_mSe8Tc9-90FXnYXbjM9RS4epKPTwuqOwRaL3skshWQGehhkxhKwvUaMHjM3OuNQYysaPBxGZJfvKXvqwYXFls4YIlO8d8Bkc82fQXCcgUglnjOwpURwNjWwTqOKBONJ1Ii05VV34BddKUg72mZuyE2FdZOEJQBm8.mIXS2wxQhn1jE7eLbcZlaiHp_ibdTWFXG2fK9GFoBCE&amp;dib_tag=se&amp;keywords=Cooler%2BMaster%2BV850%2BSFX%2BGold%2C%2BUK%2BPlug%2B-%2B850W%2B80%2BPLUS%2BGold%2C%2BFully%2BModular%2BPower%2BSupply%2BUnit%2C%2BSFFmini-ITX%2BPSU%2C%2BSemi-Fanless%2BMode%2C%2BSFX-to-ATX%2BBracket%2C%2BBlack%2BEdition%2C%2BQuiet%2B92%2Bmm%2BFDB%2BFan&amp;qid=1762874133&amp;sprefix=cooler%2Bmaster%2Bv850%2Bsfx%2Bgold%2Buk%2Bplug%2B-%2B850w%2B80%2Bplus%2Bgold%2Bfully%2Bmodular%2Bpower%2Bsupply%2Bunit%2Bsffmini-itx%2Bpsu%2Bsemi-fanless%2Bmode%2Bsfx-to-atx%2Bbracket%2Bblack%2Bedition%2Bquiet%2B92%2Bmm%2Bfdb%2Bfan%2Caps%2C55&amp;sr=8-1-spons&amp;aref=0q8msyDlVV&amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&amp;th=1https:/">Amazon</a></td>
+</tr>
+<tr>
+<td>TFX</td>
+<td>Inter-Tech SAMA FTX-850-B Armor</td>
+<td>850W</td>
+<td>Gold</td>
+<td style="text-align:right">135,27€</td>
+<td>Si</td>
+<td>Activo</td>
+<td>150 (W) × 86 (H) × 180 (L) mm.</td>
+<td><a href="https://www.amazon.es/Inter-Tech-FTX-850-B-Unidad-Fuente-alimentaci%C3%B3n/dp/B09G3LHNPN?ref_=v_sp_product_dpxhttps:/">Amazon</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Notas/criterios de la tienda 2:</strong></p>
+<p>-Servicio aceptable,a veces lento,aunque no tienen mucho cuidado con los paquetes</p>
+<h3>Tienda 3: <em>LDLC ES</em> {#tienda-3-<em>ldlc-es</em> }</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Marca/Modelo</th>
+<th>Potencia (W)</th>
+<th>80 PLUS</th>
+<th style="text-align:right">Precio (€)</th>
+<th>Modularidad</th>
+<th>PFC</th>
+<th>Dimensiones (L×W×H mm)</th>
+<th>Enlace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ATX</td>
+<td>Corsair RM850e</td>
+<td>850W</td>
+<td>Gold</td>
+<td style="text-align:right">107,95€</td>
+<td>Si</td>
+<td>Activo</td>
+<td>175 mm (L) × 85 mm (W) × 65 mm (H)</td>
+<td><a href="https://www.ldlc.com/es-es/ficha/PB00663406.html?utm_source">LD</a></td>
+</tr>
+<tr>
+<td>SFX</td>
+<td>be quiet! SFX Power 3</td>
+<td>450W</td>
+<td>Bronze</td>
+<td style="text-align:right">76,95€</td>
+<td>No</td>
+<td>Activo</td>
+<td>175 mm (L) × 85 mm (W) × 65 mm (H)</td>
+<td><a href="https://www.ldlc.com/es-es/ficha/PB00430602.html?utm_source">LD</a></td>
+</tr>
+<tr>
+<td>TFX</td>
+<td>be quiet! TFX Power 3</td>
+<td>300W</td>
+<td>Gold</td>
+<td style="text-align:right">76,95€</td>
+<td>No</td>
+<td>Activo</td>
+<td>125 mm (W) × 100 mm (L) × 64 mm (H)</td>
+<td><a href="%22https://www.ldlc.com/es-es/ficha/PB00430598.html%22">LD</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="tabla-resumen-comparativa-global-9-modelos">Tabla <strong>resumen comparativa</strong> (global, 9 modelos) </h4>
+<table>
+<thead>
+<tr>
+<th>Tienda</th>
+<th>Tipo</th>
+<th>Marca/Modelo</th>
+<th>Potencia (W)</th>
+<th>80 PLUS</th>
+<th>Precio (€)</th>
+<th>Modularidad</th>
+<th>PFC</th>
+<th>Dimensiones (mm)</th>
+<th>Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon</td>
+<td>ATX</td>
+<td>MSI mag A750GL PCIE5</td>
+<td>750</td>
+<td>Gold</td>
+<td>85,53</td>
+<td>Sí</td>
+<td>Activo</td>
+<td>150 × 140 × 86</td>
+<td>Buena relación precio/potencia, Gold, modular</td>
+</tr>
+<tr>
+<td>Amazon</td>
+<td>SFX</td>
+<td>Cooler Master V850</td>
+<td>850</td>
+<td>Gold</td>
+<td>200</td>
+<td>Sí</td>
+<td>Activo</td>
+<td>125 × 100 × 63,5</td>
+<td>Potente para SFF, Gold, modular</td>
+</tr>
+<tr>
+<td>Amazon</td>
+<td>TFX</td>
+<td>Inter-Tech SAMA FTX-850-B Armor</td>
+<td>850</td>
+<td>Gold</td>
+<td>135,27</td>
+<td>Sí</td>
+<td>Activo</td>
+<td>150 × 180 × 86</td>
+<td>TFX muy potente, Gold, modular</td>
+</tr>
+<tr>
+<td>PcComponentes</td>
+<td>ATX</td>
+<td>Mars Gaming MPVU750SI</td>
+<td>750</td>
+<td>Silver</td>
+<td>64,90</td>
+<td>No</td>
+<td>Activo</td>
+<td>150 × 145 × 85</td>
+<td>Muy económico, Silver, no modular</td>
+</tr>
+<tr>
+<td>PcComponentes</td>
+<td>SFX</td>
+<td>Corsair SF1000</td>
+<td>1000</td>
+<td>Platinum</td>
+<td>225,67</td>
+<td>Sí</td>
+<td>Activo</td>
+<td>125 × 100 × 63,5</td>
+<td>Potencia máxima SFX, Platinum, modular</td>
+</tr>
+<tr>
+<td>PcComponentes</td>
+<td>TFX</td>
+<td>UNYKAch 52004V2</td>
+<td>350</td>
+<td>Bronze</td>
+<td>31,57</td>
+<td>No</td>
+<td>Activo</td>
+<td>85 × 175 × 65</td>
+<td>Muy barato, solo básico, no modular</td>
+</tr>
+<tr>
+<td>LDLC</td>
+<td>ATX</td>
+<td>Corsair RM850e</td>
+<td>850</td>
+<td>Gold</td>
+<td>107,95</td>
+<td>Sí</td>
+<td>Activo</td>
+<td>85 × 175 × 65</td>
+<td>Buena opción calidad/precio, Gold, modular</td>
+</tr>
+<tr>
+<td>LDLC</td>
+<td>SFX</td>
+<td>be quiet! SFX Power 3</td>
+<td>450</td>
+<td>Bronze</td>
+<td>76,95</td>
+<td>No</td>
+<td>Activo</td>
+<td>85 × 175 × 65</td>
+<td>Económica, SFX, solo para PCs ligeros</td>
+</tr>
+<tr>
+<td>LDLC</td>
+<td>TFX</td>
+<td>be quiet! TFX Power 3</td>
+<td>300</td>
+<td>Gold</td>
+<td>76,95</td>
+<td>No</td>
+<td>Activo</td>
+<td>125 × 100 × 64</td>
+<td>Solo para PC básico, Gold, no modular</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="actividad-b--refrigeración-para-la-misma-cpu-líquida-vs-pasiva">Actividad B — <strong>Refrigeración para la MISMA CPU</strong> (Líquida vs Pasiva) </h2>
+<h3 id="cpu-elegida"><strong>CPU elegida:</strong> </h3>
+<p><strong>AMD Ryzen 7 7800X3D</strong></p>
+<ul>
+<li>Socket: <strong>AM5</strong></li>
+<li>TDP: <strong>120W</strong></li>
+<li>Muy usada en <strong>gaming de alto rendimiento</strong></li>
+</ul>
+<hr>
+<h2 id="modelos-evaluados">Modelos evaluados </h2>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Marca/Modelo</th>
+<th style="text-align:right">Precio (€)</th>
+<th>TDP soportado / Rendimiento térmico</th>
+<th>Ruido (dBA)</th>
+<th>Dimensiones (mm)</th>
+<th>Sockets</th>
+<th>Mantenimiento</th>
+<th>Garantía</th>
+<th>Enlace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Líquida (AIO)</strong></td>
+<td>Arctic Liquid Freezer II 240</td>
+<td style="text-align:right">99,90 €</td>
+<td>Hasta 250W – Muy alto rendimiento</td>
+<td>22–40 dBA</td>
+<td>Radiador 277 × 120 × 38</td>
+<td>AM4 / <strong>AM5</strong> / LGA1700</td>
+<td>Bajo (sellado)</td>
+<td>6 años</td>
+<td><a href="https://www.pccomponentes.com/arctic-liquid-freezer-ii-240">https://www.pccomponentes.com/arctic-liquid-freezer-ii-240</a></td>
+</tr>
+<tr>
+<td><strong>Pasiva (Disipador por aire)</strong></td>
+<td>Noctua NH-P1</td>
+<td style="text-align:right">119,90 €</td>
+<td>Hasta 120W – Rendimiento medio</td>
+<td>0 dBA (silencioso absoluto)</td>
+<td>158 × 154 × 152</td>
+<td>AM4 / <strong>AM5</strong> / LGA1700</td>
+<td>Nulo</td>
+<td>6 años</td>
+<td><a href="https://www.pccomponentes.com/noctua-nh-p1">https://www.pccomponentes.com/noctua-nh-p1</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="comparación-directa">Comparación directa </h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Refrigeración Líquida</th>
+<th>Refrigeración Pasiva</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperaturas</td>
+<td>Muy bajas (ideal overclock)</td>
+<td>Correctas sin forzar</td>
+</tr>
+<tr>
+<td>Ruido</td>
+<td>Bajo, pero tiene ventiladores</td>
+<td>0 dBA</td>
+</tr>
+<tr>
+<td>Mantenimiento</td>
+<td>Bajo pero existe riesgo de fuga</td>
+<td>Ninguno</td>
+</tr>
+<tr>
+<td>Tamaño</td>
+<td>Grande (radiador + tubos)</td>
+<td>Muy voluminoso</td>
+</tr>
+<tr>
+<td>Fiabilidad a largo plazo</td>
+<td>Media-alta</td>
+<td>Muy alta</td>
+</tr>
+<tr>
+<td>Precio</td>
+<td>Similar</td>
+<td>Algo más cara</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="análisis-y-elección-por-perfil">Análisis y elección por perfil </h2>
+<h3 id="gamer"><strong>Gamer:</strong> </h3>
+<ul>
+<li><strong>Recomendado:</strong> <em>Arctic Liquid Freezer II 240</em></li>
+<li>Mantiene temperaturas muy bajas jugando</li>
+<li>Permite máximo rendimiento del Ryzen 7 7800X3D</li>
+<li>Buen equilibrio entre precio, potencia y ruido</li>
+</ul>
+<hr>
+<h3 id="profesional-de-diseño--simulación"><strong>Profesional de diseño / simulación:</strong> </h3>
+<ul>
+<li><strong>Recomendado:</strong> <em>Refrigeración líquida AIO</em></li>
+<li>Mejor para cargas prolongadas</li>
+<li>Más estable en render, edición y simulaciones</li>
+</ul>
+<hr>
+<h3 id="usuario-estándar--ofimática"><strong>Usuario estándar / ofimática:</strong> </h3>
+<ul>
+<li><strong>Recomendado:</strong> <em>Noctua NH-P1 (pasiva)</em></li>
+<li>Totalmente silencioso</li>
+<li>Sin mantenimiento</li>
+<li>Ideal para equipos tranquilos y duraderos</li>
+</ul>
+<hr>
+<h2 id="conclusión-general">Conclusión general </h2>
+<ul>
+<li>La <strong>refrigeración líquida AIO</strong> es la mejor opción para <strong>jugadores y profesionales</strong> por su alto rendimiento térmico.</li>
+<li>La <strong>refrigeración pasiva</strong> es ideal para quien busca <strong>silencio absoluto, cero mantenimiento y máxima fiabilidad</strong>.</li>
+<li>En <strong>calidad-precio</strong>, gana la <strong>Arctic Liquid Freezer II 240</strong>, ya que ofrece rendimiento de gama alta por menos de 100 €.</li>
+</ul>
+<h1 id="parte-2--selección-y-comparación-de-componentes-único-archivo">Parte 2 — Selección y comparación de componentes (único archivo) </h1>
+<h2 id="1-búsqueda-de-componentes-tienda-online">1) Búsqueda de componentes (tienda online) </h2>
+<p>Elige una o varias tiendas (p. ej., <strong>PcComponentes</strong>, <strong>Amazon ES</strong>, <strong>LDLC ES</strong>). Completa las <strong>4 fichas</strong> siguientes.</p>
+<h3 id="11-memoria-ram--pc-de-oficina">1.1 Memoria RAM — PC de oficina </h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Marca y modelo</strong></td>
+<td>Kigston FURY Beast</td>
+</tr>
+<tr>
+<td><strong>Capacidad</strong></td>
+<td>16G</td>
+</tr>
+<tr>
+<td><strong>Velocidad / Timings</strong></td>
+<td>3200 MHZ,CL16</td>
+</tr>
+<tr>
+<td><strong>Tipo (DDR4/DDR5) y formato (DIMM/SO-DIMM)</strong></td>
+<td>DDR4 y DIMM</td>
+</tr>
+<tr>
+<td><strong>Precio (€)</strong></td>
+<td>94.02€</td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td><a href="%22https://www.pccomponentes.com/kingston-fury-beast-ddr4-3200-mhz-16gb-cl16%22">PcComponentes</a></td>
+</tr>
+<tr>
+<td><strong>Captura</strong></td>
+<td><img src="../assets/img/20-parte2/ram_oficina.png" alt="ram_oficina" title="Captura RAM oficina"></td>
+</tr>
+<tr>
+<td><strong>Justificación</strong></td>
+<td>Tiene una gran estabilidad para el ambito de oficina aunque presenta problemas para tareas de diseño muy grandes ,tiene un coste muy bueno sabiendo que seguramente ahbra mas de un Pc de este tipo si es una empresa,tiene una gran compatibilidad al ser DDR4 el cual presenta una gran eficiencia electrica ademas de ofrecer una gran estabilidad.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-memoria-ram--pc-gaming">1.2 Memoria RAM — PC gaming </h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Marca y modelo</strong></td>
+<td>Corsair Vengence RGB</td>
+</tr>
+<tr>
+<td><strong>Capacidad</strong></td>
+<td>32 (2x16 G)</td>
+</tr>
+<tr>
+<td><strong>Velocidad / Timings / XMP-EXPO</strong></td>
+<td>6000MHz,CASCL36(36-44-44-96) y es compatiblr ocn XMP-EXPO</td>
+</tr>
+<tr>
+<td><strong>Tipo (DDR4/DDR5)</strong></td>
+<td>DDR5(para placas mas nuevas)</td>
+</tr>
+<tr>
+<td><strong>Precio (€)</strong></td>
+<td>479.95€</td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td><a href="%22https://www.pccomponentes.com/memoria-ram-corsair-32gb-ddr5-6000mhz-vengeance-rgb-cmh32gx5m2e6000z36w%22">PcComponentes</a></td>
+</tr>
+<tr>
+<td><strong>Captura</strong></td>
+<td><img src="../assets/img/20-parte2/ram_gaming.png" alt="ram_gaming" title="Captura RAM gaming"></td>
+</tr>
+<tr>
+<td><strong>Justificación</strong></td>
+<td>La ram si que es verdad que aumentan los fps pero no de una manera muy grande sobre todo si esta en altas resoluciones ya que la GPU es la que se encarga en ese ambito,aunque si que es verdad que que DDR4 tiene menos latencia el DDR5 lo compensa con su mayor frecuencia/banda en muchos casos.Esta ram ofrece perfiles para ambos tipos de placa tanto como Intel y AMD ademas se que tienen una garantiua de por vida segun su ficha tecnica y esta cubre defectos de fabrica aunque no daños durante sus usos y hablando esteticamente es bastate bonmita al sder de color blanco y usar leds.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="13-microprocesador--pc-de-oficina">1.3 Microprocesador — PC de oficina </h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Marca y modelo</strong></td>
+<td>Intel Core i3-13100</td>
+</tr>
+<tr>
+<td><strong>Núcleos / Hilos</strong></td>
+<td>4 nucleos y 8 hilos</td>
+</tr>
+<tr>
+<td><strong>Frecuencias (base/boost)</strong></td>
+<td>Base: 3.4 GHz – Boost: hasta 4.5 GHz</td>
+</tr>
+<tr>
+<td><strong>Gráficos integrados</strong></td>
+<td>Si tiene graficos integrados los cuales son Intel UHD Graphics 730</td>
+</tr>
+<tr>
+<td><strong>TDP / Consumo</strong></td>
+<td>60 W (base) y 89 W en turbo</td>
+</tr>
+<tr>
+<td><strong>Precio (€)</strong></td>
+<td>208.95€</td>
+</tr>
+<tr>
+<td><strong>Socket / Compatibilidad</strong></td>
+<td>Socket LGA 1700; compatible con placas DDR4 o DDR5</td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td><a href="%22https://www.pccomponentes.com/intel-core-i3-13100-34-ghz-45-ghz%22">PcComponentes</a></td>
+</tr>
+<tr>
+<td><strong>Captura</strong></td>
+<td><img src="../assets/img/20-parte2/cpu_oficina.png" alt="cpu_oficina" title="Captura CPU oficina"></td>
+</tr>
+<tr>
+<td><strong>Justificación</strong></td>
+<td>El intel 3 al tener graficos integrados mas que suficientes para un trabajo de oficina hace que sea ideal para la elecion debido a que saeria mas barato que comprar CPU+GPU,permite tener muchas ventanas abiertas a la vez haciendo que la CPU pueda hacer trabajo normal de oficina sin problemas a no ser que se le sobresija y por util es muy versatil ya que es compatible con DDR4 y DDR5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="14-microprocesador--pc-gaming">1.4 Microprocesador — PC gaming </h3>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Marca y modelo</strong></td>
+<td>AMD Ryzne 7</td>
+</tr>
+<tr>
+<td><strong>Núcleos / Hilos</strong></td>
+<td>8 nucleos y 16 hilos</td>
+</tr>
+<tr>
+<td><strong>Frecuencias (base/boost)</strong></td>
+<td>4.2GHz-5.0 GHZ</td>
+</tr>
+<tr>
+<td><strong>Caché</strong></td>
+<td>L3 + L2</td>
+</tr>
+<tr>
+<td><strong>TDP / Consumo</strong></td>
+<td>120 W</td>
+</tr>
+<tr>
+<td><strong>Precio (€)</strong></td>
+<td>378.90€</td>
+</tr>
+<tr>
+<td><strong>Socket / Compatibilidad</strong></td>
+<td>Socket AM5; compatible con placas base AM5 y memorias DDR5</td>
+</tr>
+<tr>
+<td><strong>URL</strong></td>
+<td><a href="%22https://www.amazon.es/-/en/AMD-Ryzen-7800X3D-Technology-Magnification/dp/B0BTZB7F88/ref=sr_1_1?sr=8-1%22">Amazon</a></td>
+</tr>
+<tr>
+<td><strong>Captura</strong></td>
+<td><img src="../assets/img/20-parte2/cpu_gaming.png" alt="cpu_gaming" title="Captura CPU gaming"></td>
+</tr>
+<tr>
+<td><strong>Justificación</strong></td>
+<td>Proporciona muchos fps debido a que contiene uun Cache L3 haciendo que de muchos fps incluso supera CPUs que tiene frecuencias mas altas y mayor numero de nucleos,tiene una excelente multitarea lo que la hace perfecta para streaming y juego.Esta CPU esta diseñada para usarse con periferecos de muy alta gama y al tener un gran redimiento presenta un cuello de botella muy pequeño.Lo unico malo es que solo soporta DDR5 y por ultimo AMD promete varios años de soporte y una gran capacidad sin tener que cambiar la placa base.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-tabla-comparativa--tipos-de-ram-encontrados">2) Tabla comparativa — Tipos de RAM encontrados </h2>
+<table>
+<thead>
+<tr>
+<th>Tipo RAM</th>
+<th style="text-align:right">Velocidad Típica (MT/s)</th>
+<th style="text-align:right">Voltaje Típico (V)</th>
+<th style="text-align:right">Consumo/Eficiencia</th>
+<th style="text-align:right">Precio por GB (Aprox.)</th>
+<th>Compatibilidad con Placas</th>
+<th>Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DDR4</strong></td>
+<td style="text-align:right">2400 a 3600</td>
+<td style="text-align:right">1.2 V</td>
+<td style="text-align:right">Menor consumo que DDR3, Mayor que DDR5.</td>
+<td style="text-align:right">140 euros aprox</td>
+<td>Intel 10ª, 11ª, 12ª, 13ª, 14ª Gen  / AMD AM4</td>
+<td>Tecnología madura, más estable.</td>
+</tr>
+<tr>
+<td><strong>DDR5</strong></td>
+<td style="text-align:right">4800 a 8000+</td>
+<td style="text-align:right">1.1 V (Estándar)</td>
+<td style="text-align:right">Más eficiente y menor consumo por Mhz.</td>
+<td style="text-align:right">480 euros aprox</td>
+<td>Intel 12ª, 13ª, 14ª Gen / AMD AM5</td>
+<td>Mayor ancho de banda y frecuencias de partida más altas.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="3-investigación--ddr5">3) Investigación — DDR5 </h1>
+<h2 id="1-ventajas-de-ddr5-frente-a-ddr4">1) Ventajas de DDR5 frente a DDR4 </h2>
+<ul>
+<li>
+<p><strong>Mayor ancho de banda:</strong><br>
+DDR5 parte desde 4800 MT/s (JEDEC), mientras que DDR4 parte de 2133–3200 MT/s. Esto supone un incremento de ancho de banda superior al 50% en configuraciones base, y aún mayor en kits de alto rendimiento.</p>
+</li>
+<li>
+<p><strong>Subcanales internos (2×32 bits por módulo):</strong><br>
+Cada módulo DDR5 se divide en dos subcanales independientes, lo que mejora la eficiencia de acceso a memoria, reduce latencias efectivas en accesos pequeños y optimiza el paralelismo.</p>
+</li>
+<li>
+<p><strong>PMIC (Power Management IC) integrado en el módulo:</strong><br>
+A diferencia de DDR4, donde la regulación de voltaje depende de la placa base, en DDR5 esta se gestiona directamente desde el módulo de memoria, mejorando la estabilidad, eficiencia energética y control del voltaje.</p>
+</li>
+<li>
+<p><strong>On-Die ECC (corrección de errores en el chip):</strong><br>
+DDR5 incluye corrección de errores a nivel interno del chip para reducir fallos por interferencias eléctricas y aumentar la fiabilidad, especialmente en módulos de alta densidad. No equivale al ECC de servidores, pero mejora la estabilidad.</p>
+</li>
+<li>
+<p><strong>Perfiles XMP 3.0 (Intel) y EXPO (AMD):</strong><br>
+Permiten cargar configuraciones certificadas de frecuencia, voltaje y latencias con un solo clic desde BIOS. XMP 3.0 además permite guardar múltiples perfiles en el propio módulo.</p>
+</li>
+<li>
+<p><strong>Mayor capacidad por módulo:</strong><br>
+DDR5 permite módulos de mucha mayor densidad que DDR4 (64 GB, 96 GB y superiores), algo clave para estaciones de trabajo, virtualización y servidores.</p>
+</li>
+</ul>
+<hr>
+<h2 id="2-usos-donde-se-aprecia-claramente-la-diferencia">2) Usos donde se aprecia claramente la diferencia </h2>
+<ul>
+<li>
+<p><strong>Creación de contenido (edición 4K/8K, renderizado, 3D, efectos):</strong><br>
+El mayor ancho de banda acelera la manipulación de grandes volúmenes de datos y reduce cuellos de botella al trabajar con múltiples capas, texturas y efectos.</p>
+</li>
+<li>
+<p><strong>Inteligencia Artificial ligera en CPU:</strong><br>
+En inferencia de modelos pequeños y medianos que dependen de la RAM del sistema, el mayor throughput de DDR5 mejora los tiempos de respuesta.</p>
+</li>
+<li>
+<p><strong>Multitarea pesada y virtualización:</strong><br>
+Ejecutar múltiples máquinas virtuales, contenedores y aplicaciones exigentes de forma simultánea se beneficia tanto del ancho de banda como de la mayor capacidad.</p>
+</li>
+<li>
+<p><strong>Juegos CPU-bound y altas tasas de refresco:</strong><br>
+En escenarios donde la CPU es el límite (simulación, física, RTS, eSports a 240 Hz), DDR5 puede aportar mejoras reales en FPS mínimos y estabilidad del frametime, aunque en muchos títulos la diferencia frente a DDR4 rápida es moderada.</p>
+</li>
+<li>
+<p><strong>Sistemas con GPU integrada (APUs):</strong><br>
+Las iGPU utilizan la RAM del sistema como VRAM. El ancho de banda extra de DDR5 mejora de forma notable el rendimiento gráfico frente a DDR4.</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-ejemplo-concreto-donde-ddr5-supone-una-ventaja-clara">3) Ejemplo concreto donde DDR5 supone una ventaja clara </h2>
+<h3 id="escenario">Escenario: </h3>
+<p>Estación de trabajo para <strong>edición de vídeo profesional 4K/8K y multitarea intensiva</strong>.</p>
+<h3 id="configuración-ejemplo">Configuración ejemplo: </h3>
+<ul>
+<li>CPU: AMD Ryzen 9 o Intel Core i9 moderno</li>
+<li>Placa base: AM5 o LGA 1700</li>
+<li>Memoria: 64–128 GB DDR5-6000 con perfiles EXPO/XMP 3.0</li>
+<li>Almacenamiento: SSD NVMe</li>
+</ul>
+<h3 id="por-qué-ddr5-es-claramente-superior-aquí">Por qué DDR5 es claramente superior aquí: </h3>
+<ul>
+<li><strong>Mayor ancho de banda:</strong> acelera el scrubbing de la línea de tiempo, la carga de efectos y la exportación de vídeo.</li>
+<li><strong>Mayor capacidad por módulo:</strong> permite trabajar con proyectos pesados sin recurrir a memoria virtual.</li>
+<li><strong>Mejor estabilidad eléctrica gracias al PMIC:</strong> ideal para sesiones largas de renderizado.</li>
+<li><strong>Optimización automática con EXPO/XMP:</strong> se aprovecha todo el potencial de la RAM sin ajustes manuales.</li>
+</ul>
+<h3 id="resultado-práctico">Resultado práctico: </h3>
+<ul>
+<li>Exportaciones más rápidas</li>
+<li>Mayor fluidez en edición</li>
+<li>Más estabilidad en multitarea profesional</li>
+<li>Mejor aprovechamiento de CPUs de última generación</li>
+</ul>
+<h2 id="conclusión">Conclusión </h2>
+<p>DDR5 no solo es una evolución en frecuencia, sino un cambio estructural en la arquitectura de la memoria: más ancho de banda, mejor eficiencia, mayor capacidad, más estabilidad y perfiles avanzados. En tareas profesionales, IA ligera, estaciones de trabajo, APUs y multitarea pesada, <strong>la diferencia fr</strong></p>
+<h2 id="4-fuentes">4) Fuentes </h2>
+<ul>
+<li>
+<p>[tomshardware] — <a href="https://www.tomshardware.com/features/ddr5-vs-ddr4-is-it-time-to-upgrade-your-ram">https://www.tomshardware.com/features/ddr5-vs-ddr4-is-it-time-to-upgrade-your-ram</a></p>
+</li>
+<li>
+<p>[HardZone] — <a href="https://hardzone.es/tutoriales/componentes/memoria-ram-ddr4-vs-ddr5/">https://hardzone.es/tutoriales/componentes/memoria-ram-ddr4-vs-ddr5/</a></p>
+</li>
+<li>
+<p>[Geekom] — <a href="https://www.geekom.es/ddr4-vs-ddr5/">https://www.geekom.es/ddr4-vs-ddr5/</a></p>
+</li>
+<li>
+<p>[Reviewed (laptops/DDR4 vs DDR5)] — <a href="https://www.reviewed.com/laptops/features/ddr4-vs-ddr5">https://www.reviewed.com/laptops/features/ddr4-vs-ddr5</a></p>
+</li>
+<li>
+<p>[Corsair] — <a href="https://www.corsair.com/us/en/explorer/diy-builder/memory/is-ddr5-better-than-ddr4/">https://www.corsair.com/us/en/explorer/diy-builder/memory/is-ddr5-better-than-ddr4/</a></p>
+</li>
+<li>
+<p>[Kingston] — <a href="https://www.kingston.com/es/blog/pc-performance/ddr5-overview">https://www.kingston.com/es/blog/pc-performance/ddr5-overview</a></p>
+</li>
+<li>
+<p>[Geeknetic] — <a href="https://www.geeknetic.es/Guia/2244/DDR4-vs-DDR5-Comparativa-de-Rendimiento.html">https://www.geeknetic.es/Guia/2244/DDR4-vs-DDR5-Comparativa-de-Rendimiento.html</a></p>
+</li>
+<li>
+<p>[Wikipedia (DDR5 SDRAM)] — <a href="https://es.wikipedia.org/wiki/DDR5_SDRAM">https://es.wikipedia.org/wiki/DDR5_SDRAM</a></p>
+</li>
+</ul>
+<h1 id="parte-3--gpus-y-precios-reales-black-friday-2025">Parte 3 — GPUs y precios reales (Black Friday 2025) </h1>
+<blockquote>
+<p>Vídeo: <strong>“Mejores Tarjetas Gráficas Calidad - Precio | TOP GPUs GAMING Black Friday 2025”</strong><br>
+URL: <a href="https://www.youtube.com/watch?v=ILOtkTXLUvg">https://www.youtube.com/watch?v=ILOtkTXLUvg</a></p>
+</blockquote>
+<hr>
+<h2 id="0-portada">0) Portada </h2>
+<ul>
+<li>Alumno/a: <em>Jesus Soto Soto</em></li>
+<li>Grupo: <em>ASIR1</em></li>
+<li>Fecha: <em>05/12/2025</em></li>
+</ul>
+<hr>
+<h2 id="1-introducción">1) Introducción </h2>
+<p>Este informe se basa en el vídeo de YouTube "Mejores Tarjetas Gráficas Calidad - Precio | TOP GPUs GAMING Black Friday 2025" del canal Rincón de Varo - Hardware &amp; PC Gaming, publicado el 13 de noviembre de 2025.<br>
+El vídeo ofrece una guía detallada sobre las tarjetas gráficas (GPU) con la mejor relación calidad-precio para la temporada de Black Friday 2025, cubriendo diferentes rangos de precios y comparando modelos de AMD y NVIDIA, haciendo especial hincapié en la memoria VRAM y las tecnologías como DLSS 4 y FSR 4.</p>
+<p>El objetivo de esta parte es identificar las cuatro tarjetas gráficas recomendadas en los rangos de precio de ~350 € y 600–800 €, determinar los tramos exactos del vídeo donde se mencionan, y contrastar los precios sugeridos en el contenido con los precios reales de venta actuales en tiendas españolas, con el fin de evaluar si las proyecciones del vídeo se cumplen en el mercado real.</p>
+<hr>
+<h2 id="2-tramos-del-vídeo-y-modelos-mencionados">2) Tramos del vídeo y modelos mencionados </h2>
+<h3 id="21-tramo-350-">2.1 Tramo ~350 € </h3>
+<ul>
+<li>Minuto inicio–fin: <strong>07:43 – 09:27</strong></li>
+<li>GPUs citadas (2): <strong>9060 XT de 16 GB (Modelo A) [07:53]</strong>, <strong>5060 Ti de 16 GB (Modelo B) [09:00]</strong></li>
+</ul>
+<h3 id="22-tramo-600800-">2.2 Tramo 600–800 € </h3>
+<ul>
+<li>Minuto inicio–fin: <strong>11:36 – 14:04</strong></li>
+<li>GPUs citadas (2): <strong>9070 XT (Modelo C) [11:43]</strong>, <strong>5070 Ti (Modelo D) [11:44]</strong></li>
+</ul>
+<p><strong>¿Se repite algún modelo entre tramos?</strong><br>
+No, no se repite ningún modelo. Aunque ambas gamas ofrecen opciones de AMD (serie 9000 XT) y NVIDIA (serie 5000 Ti), las tarjetas son de gamas distintas y tienen configuraciones de hardware diferentes: la gama de 350 € está liderada por la 9060 XT y 5060 Ti, mientras que la gama de 600–800 € se centra en las más potentes 9070 XT y 5070 Ti.</p>
+<hr>
+<h2 id="3-precios-reales-en-tiendas">3) Precios reales en tiendas </h2>
+<h3 id="31-gpu-del-tramo-350---modelo-a-9060-xt-de-16-gb">3.1 GPU del tramo 350 € — Modelo A: 9060 XT de 16 GB </h3>
+<ul>
+<li>Tienda: PcComponentes</li>
+<li>Nombre exacto en tienda: Gigabyte AMD Radeon RX 9060 XT GAMING OC 16GB GDDR6 FSR 4</li>
+<li>Precio (€): 409,90 €</li>
+<li>URL: <a href="%22https://tidd.ly/4p9f4dL">Pccomponentes</a></li>
+<li>Imagen: <img src="../assets/img/30-parte3/gpu_a.png" alt="gpu_a" title="GPU A"></li>
+</ul>
+<h3 id="32-gpu-del-tramo-350---modelo-b-5060-ti-de-16-gb">3.2 GPU del tramo 350 € — Modelo B: 5060 Ti de 16 GB </h3>
+<ul>
+<li>Tienda: PcComponentes</li>
+<li>Nombre exacto en tienda: Gigabyte GeForce RTX 5060 Ti Eagle OC 16GB GDDR7 DLSS4</li>
+<li>Precio (€): 359.90€</li>
+<li>URL: <a href="%22https://www.pccomponentes.com/tarjeta-grafica-sapphire-pulse-amd-radeon-rx-9060-xt-16gb-gddr6-fsr-4%22">PcComponentes</a></li>
+<li>Imagen: <img src="../assets/img/30-parte3/gpu_b.png" alt="gpu_b" title="GPU B"></li>
+</ul>
+<h3 id="33-gpu-del-tramo-600800---modelo-c-9070-xt">3.3 GPU del tramo 600–800 € — Modelo C: 9070 XT </h3>
+<ul>
+<li>Tienda: Amazon</li>
+<li>Nombre exacto en tienda: PowerColor Reaper AMD Radeon RX 9070 XT 16GB GDDR6</li>
+<li>Precio (€): €629.90</li>
+<li>URL: <a href="%22https://www.amazon.es/Sapphire-Pulse-RadeonTM-9070-Gaming/dp/B0DRPRZMK2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;sr=8-1&amp;language=es_ES&amp;ref_=as_li_ss_tl%22">Amazon</a></li>
+<li>Imagen: <img src="../assets/img/30-parte3/gpu_c.png" alt="gpu_c" title="GPU C"></li>
+</ul>
+<h3 id="34-gpu-del-tramo-600800---modelo-d-5070-ti">3.4 GPU del tramo 600–800 € — Modelo D: 5070 Ti </h3>
+<ul>
+<li>Tienda: Alternate</li>
+<li>Nombre exacto en tienda: Tarjeta Gráfica PNY GeForce RTX 5070 Ti 16GB GDDR7 Reflex 2 RTX AI DLSS4</li>
+<li>Precio (€): 849,90€</li>
+<li>URL: <a href="%22https://www.pccomponentes.com/tarjeta-grafica-pny-geforce-rtx-5070-ti-16gb-gddr7-reflex-2-rtx-ai-dlss4%22">PcComponentes</a></li>
+<li>Imagen: <img src="../assets/img/30-parte3/gpu_d.png" alt="gpu_d" title="GPU D"></li>
+</ul>
+<hr>
+<h2 id="4-tabla-comparativa-precios-reales">4) Tabla comparativa (precios reales) </h2>
+<table>
+<thead>
+<tr>
+<th>Tramo (vídeo)</th>
+<th>GPU (modelo del vídeo)</th>
+<th>Tienda</th>
+<th style="text-align:right">Precio (€)</th>
+<th>URL</th>
+<th>Imagen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>350 €</td>
+<td>9060 XT de 16 GB</td>
+<td>PcComponentes</td>
+<td style="text-align:right">409,90</td>
+<td><a href="%22https://tidd.ly/4p9f4dL">Pccomponentes</a></td>
+<td><img src="../assets/img/30-parte3/gpu_a.png" alt="gpu_a" title="GPU "></td>
+</tr>
+<tr>
+<td>350 €</td>
+<td>5060 Ti de 16 GB</td>
+<td>PcComponentes</td>
+<td style="text-align:right">359.90€</td>
+<td><a href="%22https://www.pccomponentes.com/tarjeta-grafica-sapphire-pulse-amd-radeon-rx-9060-xt-16gb-gddr6-fsr-4%22">PcComponentes</a></td>
+<td><img src="../assets/img/30-parte3/gpu_b.png" alt="gpu_b" title="GPU B"></td>
+</tr>
+<tr>
+<td>600–800 €</td>
+<td>9070 XT</td>
+<td>Amazon</td>
+<td style="text-align:right">€629.90</td>
+<td><a href="%22https://www.amazon.es/Sapphire-Pulse-RadeonTM-9070-Gaming/dp/B0DRPRZMK2?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;sr=8-1&amp;language=es_ES&amp;ref_=as_li_ss_tl%22">Amazon</a></td>
+<td><img src="../assets/img/30-parte3/gpu_c.png" alt="gpu_c" title="GPU C"></td>
+</tr>
+<tr>
+<td>600–800 €</td>
+<td>5070 Ti</td>
+<td>PcComponentes</td>
+<td style="text-align:right">849,90€</td>
+<td><a href="%22https://www.pccomponentes.com/tarjeta-grafica-pny-geforce-rtx-5070-ti-16gb-gddr7-reflex-2-rtx-ai-dlss4%22">PcComponentes</a></td>
+<td><img src="../assets/img/30-parte3/gpu_d.png" alt="gpu_d" title="GPU D"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-conclusión">5) Conclusión </h2>
+<p>¿Los precios reales se parecen a lo que sugiere el vídeo?<br>
+En general, la serie AMD Radeon RX 9000 es la que mejor se alinea con los precios sugeridos para el Black Friday 2025. La 9070 XT se encuentra en 599,95 €, coincidiendo con la recomendación del vídeo de encontrarla por debajo de los 600 € y siendo catalogada como "una auténtica compraza". Por el contrario, los modelos de NVIDIA RTX 5000 se encuentran notablemente por encima del precio ideal que el influencer proyectaba, especialmente la 5060 Ti de 16 GB, que es casi 70 € más cara que el precio de Black Friday ideal sugerido (420 €).</p>
+<p>¿Cuál de las cuatro ofrece mejor calidad-precio y por qué?<br>
+Siguiendo tanto el análisis del vídeo como los precios reales encontrados, la AMD Radeon RX 9070 XT ofrece la mejor relación calidad-precio. Su precio de 599,95 € es el punto más agresivo en relación con el rendimiento que ofrece, que el vídeo describe como un "empate técnico" con la 5070 Ti en 1440p y 4K, a pesar de costar más de 200 € menos que su equivalente de NVIDIA (803,00 €).</p>
+<p>Observaciones finales<br>
+El mercado de tarjetas gráficas en 2025 parece estar muy polarizado en cuanto a precios. Si bien la serie 9000 XT de AMD logra mantener sus precios competitivos y cerca del "precio Black Friday", la serie RTX 5000 de NVIDIA se está vendiendo a un precio premium, que es significativamente superior al sugerido por el creador de contenido. Los usuarios que busquen la mejor relación FPS/Euro se inclinarán claramente por las opciones de AMD.</p>
+<hr>
+<h2 id="6-fuentes">6) Fuentes </h2>
+<ul>
+<li>Tiendas: enlaces listados arriba.</li>
+<li>Vídeo: <a href="http://www.youtube.com/watch?v=ILOtkTXLUvg">http://www.youtube.com/watch?v=ILOtkTXLUvg</a></li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
